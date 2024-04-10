@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1001 Words</title>
+     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FAFAFA;
+        font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 10mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .subpage {
+        padding: 1cm;
+        border: 5px red solid;
+        height: 257mm;
+        outline: 2cm #FFEAEA solid;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        html, body {
+            width: 210mm;
+            height: 297mm;        
+        }
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }		
+
+	</style>
+    <script>
+    function speak(){
+        var msg = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();    
+        var lang1="ar" 
+        msg.voice =voices[2]; 
+        msg.lang=lang1; 
+        msg.text = "يرجى نسخ الجملة التالية أدناه";    
+        window.speechSynthesis.speak(msg);
+    }
+    </script>
+</head>
+<body>
+
+<div class="book">
+	<div class="page">
+		<img src="images/1001-words.png" width="100%" />
+		<div id="tag_line">learn 1000+ frequent words in Arabic with examples, audio, and practice </div>
+
+	</div>
+
+    <div class="page">
+
+        <div class="subpage">
+        	<h1>Introduction</h1>
+        	<p id="intro_text">
+        		1001 Words is a comprehensive Arabic vocabulary book that will help you learn and master over a thousand essential words. The book introduces all the words with their pronunciation, plural forms, and example sentences to help you understand them in context. It also has interactive features that allow you to play audio clips of the words, practice spelling and memorization, and track your progress. Whether you're a beginner or an advanced learner, 1001 Words is the perfect resource for expanding your Arabic vocabulary.
+
+        	</p>
+			
+        </div>   
+        
+    </div>
+
+
+    <div id="content_pages">
+        <div class="page">
+                <div class="subpage text-center">
+                </div>
+        </div>
+    </div>
+
+    
+    <div id="word_pages"><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_0">جد</h1>
+                        <div id="main_word_row_0" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_0-0">جَدّ</div>
+                                <div id="diac_word_rom_0-0">jadd</div>
+                                <div id="plural_0-0">جُدُود judood | أَجْدَاد ajdaad</div>
+                                <div id="gloss_0-0">grandfather</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div><div id="diac_column" class="col">
+                                <div id="diac_word_0-1">جِدّ</div>
+                                <div id="diac_word_rom_0-1">jidd</div>
+                                
+                                <div id="gloss_0-1">seriousness</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_0"><tr><td>Very good .</td><td>jayyid jiddan</td><td style="text-align: right; direction: rtl;">جَيِّد جِدّاً</td></tr><tr><td>Very well , thank you .</td><td>7asanan jiddan , shukran lakum .</td><td style="text-align: right; direction: rtl;">حَسَناً جِدّاً ، شُكْراً لَكُم .</td></tr><tr><td>They're very simple .</td><td>hum busaTaa2 jiddan .</td><td style="text-align: right; direction: rtl;">هُم بُسَطاء جِدّاً .</td></tr><tr><td>Very far away .</td><td>ba3eedan jiddan .</td><td style="text-align: right; direction: rtl;">بَعِيداً جِدّاً .</td></tr><tr><td>I'm not very hungry .</td><td>anaa last jaa2i3aa jiddan .</td><td style="text-align: right; direction: rtl;">أَنا لَست جائِعا جِدّاً .</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_1">جِدّ</h1>
+                        <div id="main_word_row_1" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_1-0">شَيْء</div>
+                                <div id="diac_word_rom_1-0">shay2</div>
+                                <div id="plural_1-0">أَشْيَاء ashyaa2</div>
+                                <div id="gloss_1-0">Thing</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_1"><tr><td>That 's the last thing you need .</td><td>haadhaa aakhir shay2 ta7taajh</td><td style="text-align: right; direction: rtl;">هٰذا آخِر شَيْء تَحْتاجه</td></tr><tr><td>Yes , I forgot something .</td><td>ajl , naseet shay2an</td><td style="text-align: right; direction: rtl;">أَجْل ، نَسِيْت شَيْئاً</td></tr><tr><td>Father , something wonderful has happened .</td><td>abee , shay2 raa2i3 qad 7adath</td><td style="text-align: right; direction: rtl;">أَبِي ، شَيْء رائِع قَد حَدَث</td></tr><tr><td>I guess somebody knows something .</td><td>a3taqid ann a7aduhum ya3rif shay2an</td><td style="text-align: right; direction: rtl;">أَعْتَقِد أَنّ أَحَدُهُم يَعْرِف شَيْئاً</td></tr><tr><td>Why don't some of you do something ?</td><td>limaadhaa laayf3l a7adkum shay2an ?</td><td style="text-align: right; direction: rtl;">لِماذا لايفعل أَحَدكُم شَيْئاً ؟</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_1"><tr><td>جَدّ</td><td>grandfather</td></tr><tr><td>جِدّ</td><td>seriousness</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_2">جِدّ</h1>
+                        <div id="main_word_row_2" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_2-0">كَلّ</div>
+                                <div id="diac_word_rom_2-0">kall</div>
+                                
+                                <div id="gloss_2-0">Dependent</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div><div id="diac_column" class="col">
+                                <div id="diac_word_2-1">كُلّ</div>
+                                <div id="diac_word_rom_2-1">kull</div>
+                                
+                                <div id="gloss_2-1">All</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_2"><tr><td>l`m sorry , that`s all that`s left .</td><td>anaa aasif , haadhaa kull maa tabqaa</td><td style="text-align: right; direction: rtl;">أَنا آسِف ، هٰذا كُلّ ما تَبْقَى</td></tr><tr><td>See , I've seen all that too .</td><td>ajal ra2ayt kull dhaalik ayDan</td><td style="text-align: right; direction: rtl;">أَجَل رَأَيْت كُلّ ذٰلِك أَيْضاً</td></tr><tr><td>I'll pray for you every day .</td><td>sa2uSallee min ajlk kull yawm</td><td style="text-align: right; direction: rtl;">سَأُصَلّي مِن أَجْلك كُلّ يَوْم</td></tr><tr><td>And give him one of those pills every four hours .</td><td>wa2u3Tih a7d haadhihii al2aqraaS kull arba3 saa3aat</td><td style="text-align: right; direction: rtl;">وَأُعْطِه أحد هٰذِهِِ الأَقْراص كُلّ أَرْبَع ساعات</td></tr><tr><td>I am sorry to put you all this trouble .</td><td>aasaf li2annanee usabbib lak kull haadhihi almataa3ib</td><td style="text-align: right; direction: rtl;">آسَف لِأَنَّنِي أُسَبِّب لَك كُلّ هٰذِهِ المَتاعِب</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_2"><tr><td>شَيْء</td><td>Thing</td></tr><tr><td>جَدّ</td><td>grandfather</td></tr><tr><td>جِدّ</td><td>seriousness</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_3">جِدّ</h1>
+                        <div id="main_word_row_3" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_3-0">لَدَى</div>
+                                <div id="diac_word_rom_3-0">ladaa</div>
+                                
+                                <div id="gloss_3-0">at | have</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_3"><tr><td>Oh , at least we have some rope .</td><td>3alaa al2aqall , ladaynaa ba3D al7ibaal .</td><td style="text-align: right; direction: rtl;">عَلَى الأَقَلّ ، لَدَينا بَعض الحِبال .</td></tr><tr><td>At last I have something to write in my diary .</td><td>3alaa al2aqall ladayya maa aktubh fee mudhakkiraatee</td><td style="text-align: right; direction: rtl;">عَلَى الأَقَلّ لَدَيَّ ما أَكْتُبه فِي مُذَكِّراتِي</td></tr><tr><td>What 's new with you ?</td><td>maa aljadeed ladayk ?</td><td style="text-align: right; direction: rtl;">ما الجَدِيد لَدَيك ؟</td></tr><tr><td>She had a nurse with her .</td><td>kaan ladayhaa mumarriDah</td><td style="text-align: right; direction: rtl;">كان لَدَيها مُمَرِّضَة</td></tr><tr><td>I'll have nothing to do with it .</td><td>laysa ladaa sha2n bihaadhaa</td><td style="text-align: right; direction: rtl;">لَيسَ لَدَى شَأْن بِهٰذا</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_3"><tr><td>كَلّ</td><td>Dependent</td></tr><tr><td>كُلّ</td><td>All</td></tr><tr><td>شَيْء</td><td>Thing</td></tr><tr><td>جَدّ</td><td>grandfather</td></tr><tr><td>جِدّ</td><td>seriousness</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_4">جَدّ</h1>
+                        <div id="main_word_row_4" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_4-0">آخِر</div>
+                                <div id="diac_word_rom_4-0">aakhir</div>
+                                <div id="plural_4-0">أَوَاخِر awaakhir</div>
+                                <div id="gloss_4-0">last</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div><div id="diac_column" class="col">
+                                <div id="diac_word_4-1">آخَر</div>
+                                <div id="diac_word_rom_4-1">aakhar</div>
+                                <div id="plural_4-1">آخَرون aakharoon</div>
+                                <div id="gloss_4-1">another</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_4"><tr><td>Upstairs with the others .</td><td>fawq ma3 al2khareen</td><td style="text-align: right; direction: rtl;">فَوْق مَع الآخَرِين</td></tr><tr><td>Where are the others ?</td><td>wa2ayn al2kharoon ?</td><td style="text-align: right; direction: rtl;">وَأَيْن الآخَرُون ؟</td></tr><tr><td>Among others .</td><td>bayna al2khareen</td><td style="text-align: right; direction: rtl;">بَينَ الآخَرِين</td></tr><tr><td>There 's another one !</td><td>yoojad waa7id aakhar</td><td style="text-align: right; direction: rtl;">يُوجَد واحِد آخَر</td></tr><tr><td>The other side of what ?</td><td>aljaanib al2khar min maadhaa ?</td><td style="text-align: right; direction: rtl;">الجانِب الآخَر مِن ماذا ؟</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_4"><tr><td>لَدَى</td><td>at | have</td></tr><tr><td>كَلّ</td><td>Dependent</td></tr><tr><td>كُلّ</td><td>All</td></tr><tr><td>شَيْء</td><td>Thing</td></tr><tr><td>جَدّ</td><td>grandfather</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_5">كُلّ</h1>
+                        <div id="main_word_row_5" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_5-0">أَمْر</div>
+                                <div id="diac_word_rom_5-0">amr</div>
+                                <div id="plural_5-0">أُمُور umoor</div>
+                                <div id="gloss_5-0">matter | issue</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div><div id="diac_column" class="col">
+                                <div id="diac_word_5-1">أَمْر</div>
+                                <div id="diac_word_rom_5-1">amr</div>
+                                <div id="plural_5-1">أوامِر awaamir</div>
+                                <div id="gloss_5-1">order | command</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_5"><tr><td>I did mention it the other day .</td><td>dhakarat al2amr lah fee dhaalik alyawm</td><td style="text-align: right; direction: rtl;">ذَكَرَت الأَمْر لَه فِي ذٰلِك اليَوْم</td></tr><tr><td>We arranged to meet the next day .</td><td>rutabnaa al2amr 3alaa ann nataqaabal alyawm altaalee</td><td style="text-align: right; direction: rtl;">رُتَبنا الأَمْر عَلَى أَنّ نَتَقابَل اليَوْم التالِي</td></tr><tr><td>Same thing .</td><td>nafs al2amr .</td><td style="text-align: right; direction: rtl;">نَفْس الأَمْر .</td></tr><tr><td>Waiting for orders , are you ?</td><td>tantaDHir al2awaamir , alays kadhaalik ?</td><td style="text-align: right; direction: rtl;">تَنْتَظِر الأَوامِر ، أَلَيْس كَذٰلِك ؟</td></tr><tr><td>And I can't disobey those orders .</td><td>walaa astaTee3 3iSyaan tilk al2awaamir</td><td style="text-align: right; direction: rtl;">وَلا أَسْتَطِيع عِصْيان تِلْك الأَوامِر</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_5"><tr><td>آخِر</td><td>last</td></tr><tr><td>آخَر</td><td>another</td></tr><tr><td>لَدَى</td><td>at | have</td></tr><tr><td>كَلّ</td><td>Dependent</td></tr><tr><td>كُلّ</td><td>All</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_6">لَدَى</h1>
+                        <div id="main_word_row_6" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_6-0">عَمَل</div>
+                                <div id="diac_word_rom_6-0">3amal</div>
+                                <div id="plural_6-0">أَعْمَال a3maal</div>
+                                <div id="gloss_6-0">work | action</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_6"><tr><td>No, It 's My First Day Of Work</td><td>laa haadhaa awwal yawm lee biaal3amal</td><td style="text-align: right; direction: rtl;">لا هٰذا أَوَّل يَوْم لِي بِالعَمَل</td></tr><tr><td>When I took up this work , I knew what it meant .</td><td>3indamaa tawallayt haadhaa al3amal . . . kunt a3lam maadhaa yu3naa</td><td style="text-align: right; direction: rtl;">عِنْدَما تَوَلَّيْت هٰذا العَمَل . . . كُنْت أَعْلَم ماذا يُعْنَى</td></tr><tr><td>Maybe you'd better get back to your work .</td><td>rubbamaa min al2afDal ann ta3ood la3amalik</td><td style="text-align: right; direction: rtl;">رُبَّما مِن الأَفْضَل أَنّ تَعُود لَعَمَلِك</td></tr><tr><td>At least you're working</td><td>3alaa al2aqall ant ta3mal</td><td style="text-align: right; direction: rtl;">عَلَى الأَقَلّ أَنْت تَعْمَل</td></tr><tr><td>So , glad to be working for me ?</td><td>idhn , fahal ant sa3eed biaal3amal ma3ee ?</td><td style="text-align: right; direction: rtl;">إِذْن ، فَهَل أَنْت سَعِيد بِالعَمَل مَعْي ؟</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_6"><tr><td>أَمْر</td><td>matter | issue</td></tr><tr><td>أَمْر</td><td>order | command</td></tr><tr><td>آخِر</td><td>last</td></tr><tr><td>آخَر</td><td>another</td></tr><tr><td>لَدَى</td><td>at | have</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_7">آخَر</h1>
+                        <div id="main_word_row_7" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_7-0">ذَهَب</div>
+                                <div id="diac_word_rom_7-0">dhahab</div>
+                                
+                                <div id="gloss_7-0">gold</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_7"><tr><td>This time you're going with us .</td><td>fee haadhihi almarrah ant satadhhab ma3anaa</td><td style="text-align: right; direction: rtl;">فِي هٰذِهِ المَرَّة أَنْت سَتَذْهَب مَعَنا</td></tr><tr><td>Where did you go last night ?</td><td>ayn dhahabt allaylah almaaDiyah ?</td><td style="text-align: right; direction: rtl;">أَيْن ذَهَبْت اللَيْلَة الماضِيَة ؟</td></tr><tr><td>There 's 1,000 in gold , and my gun .</td><td>haak alf qiT3ah dhahab wamusaddasayy</td><td style="text-align: right; direction: rtl;">هاك أَلْف قِطْعَة ذَهَب وَمُسَدَّسَيّ</td></tr><tr><td>Didn't you go to see them ?</td><td>alam tadhhab limuqaabalatihim ?</td><td style="text-align: right; direction: rtl;">أَلَم تَذْهَب لِمُقابَلَتِهِم ؟</td></tr><tr><td>Mom , where are you going ?</td><td>ummee , ilaa ayna tadhhabeen ?</td><td style="text-align: right; direction: rtl;">أُمِّي ، إِلَى أَيْنَ تَذْهَبِين ؟</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_7"><tr><td>عَمَل</td><td>work | action </td></tr><tr><td>أَمْر</td><td>matter | issue</td></tr><tr><td>أَمْر</td><td>order | command</td></tr><tr><td>آخِر</td><td>last</td></tr><tr><td>آخَر</td><td>another</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_8">جِدّ</h1>
+                        <div id="main_word_row_8" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_8-0">مَرَّة</div>
+                                <div id="diac_word_rom_8-0">marrah</div>
+                                <div id="plural_8-0">مِرَار miraar | مَرّات marraat</div>
+                                <div id="gloss_8-0">Once</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_8"><tr><td>Several times a day .</td><td>3iddah marraat fee alyawm</td><td style="text-align: right; direction: rtl;">عِدَّة مَرّات فِي اليَوْم</td></tr><tr><td>But not this time .</td><td>laakinn laysa haadhihi almarrah .</td><td style="text-align: right; direction: rtl;">لٰكِنّ لَيسَ هٰذِهِ المَرَّة .</td></tr><tr><td>How many times have I told you ?</td><td>kam marrah qult lak ?</td><td style="text-align: right; direction: rtl;">كَم مَرَّة قُلْت لَك ؟</td></tr><tr><td>How many times do I have to tell you ?</td><td>kam marrah 3alayya ann akhbarak ?</td><td style="text-align: right; direction: rtl;">كَم مَرَّة عَلَيَّ أَنّ أَخْبَرَك ؟</td></tr><tr><td>I said I was sorry three times !</td><td>laqad ta2assafat thalaath marraat !</td><td style="text-align: right; direction: rtl;">لَقَد تَأَسَّفَت ثَلاث مَرّات !</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_8"><tr><td>ذَهَب</td><td>gold</td></tr><tr><td>عَمَل</td><td>work | action </td></tr><tr><td>أَمْر</td><td>matter | issue</td></tr><tr><td>أَمْر</td><td>order | command</td></tr><tr><td>جِدّ</td><td>seriousness</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div><div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word_9">كَلّ</h1>
+                        <div id="main_word_row_9" class="row"><div id="diac_column" class="col">
+                                <div id="diac_word_9-0">فِعْل</div>
+                                <div id="diac_word_rom_9-0">fi3l</div>
+                                <div id="plural_9-0">أفعال af3aal</div>
+                                <div id="gloss_9-0">Deed | Effect | Verb</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div></div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table_9"><tr><td>What'd you do all day ?</td><td>maadhaa taf3aleen Tiwaal alyawm ?</td><td style="text-align: right; direction: rtl;">ماذا تَفْعَلِين طِوال اليَوْم ؟</td></tr><tr><td>I'm at the hotel lobby . This place is really nice .</td><td>anaa fee riwaaq alfunduq , haadhaa almakaan jameel fi3lan</td><td style="text-align: right; direction: rtl;">أَنا فِي رِواق الفُنْدُق ، هٰذا المَكان جَمِيل فِعْلاً</td></tr><tr><td>She 's done this to me so often before .</td><td>fa3alat dhaalik katheeran ma3ee min qibal</td><td style="text-align: right; direction: rtl;">فَعَلَت ذٰلِك كَثِيراً مَعْي مِن قِبَل</td></tr><tr><td>He found reasons to justify his actions .</td><td>laqad wajad asbaaban litabreer af3aalih</td><td style="text-align: right; direction: rtl;">لَقَد وَجَد أَسْباباً لِتَبْرِير أَفْعالِه</td></tr><tr><td>And what are his actions ?</td><td>wamaa hiya af3aaluh ?</td><td style="text-align: right; direction: rtl;">وَما هِيَ أَفْعالُه ؟</td></tr></tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table_9"><tr><td>مَرَّة</td><td>Once</td></tr><tr><td>ذَهَب</td><td>gold</td></tr><tr><td>عَمَل</td><td>work | action </td></tr><tr><td>شَيْء</td><td>Thing</td></tr><tr><td>كَلّ</td><td>Dependent</td></tr></tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div></div>
+    
+
+</div>
+    
+    
+        
+
+
+</body>
+</html>
+
+
