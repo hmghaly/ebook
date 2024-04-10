@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1001 Words</title>
+     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FAFAFA;
+        font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 10mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .subpage {
+        padding: 1cm;
+        border: 5px red solid;
+        height: 257mm;
+        outline: 2cm #FFEAEA solid;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        html, body {
+            width: 210mm;
+            height: 297mm;        
+        }
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }		
+
+	</style>
+    <script>
+    function speak(){
+        var msg = new SpeechSynthesisUtterance();
+        var voices = window.speechSynthesis.getVoices();    
+        var lang1="ar" 
+        msg.voice =voices[2]; 
+        msg.lang=lang1; 
+        msg.text = "يرجى نسخ الجملة التالية أدناه";    
+        window.speechSynthesis.speak(msg);
+    }
+    </script>
+</head>
+<body>
+
+<div class="book">
+	<div class="page">
+		<img src="images/1001-words.png" width="100%" />
+		<div id="tag_line">learn 1000+ frequent words in Arabic with examples, audio, and practice </div>
+
+	</div>
+
+    <div class="page">
+
+        <div class="subpage">
+        	<h1>Introduction</h1>
+        	<p id="intro_text">
+        		1001 Words is a comprehensive Arabic vocabulary book that will help you learn and master over a thousand essential words. The book introduces all the words with their pronunciation, plural forms, and example sentences to help you understand them in context. It also has interactive features that allow you to play audio clips of the words, practice spelling and memorization, and track your progress. Whether you're a beginner or an advanced learner, 1001 Words is the perfect resource for expanding your Arabic vocabulary.
+
+        	</p>
+			
+        </div>   
+        
+    </div>
+
+
+    <div id="content_pages">
+        <div class="page">
+                <div class="subpage text-center">
+                </div>
+        </div>
+    </div>
+
+    
+    <div id="word_pages">
+        <div id="sample_page" class="page">
+                <div class="subpage text-center">
+                    <div id="word_section" class="" style="height: 30%">
+                        <h1 id="main_word">ملك</h1>
+                        <div id="main_word_row" class="row">
+                            <div id="diac_column" class="col">
+                                <div id="diac_word">مِلك</div>
+                                <div id="diac_word_rom">milk</div>
+                                <div id="plural">amlaak أملاك</div>
+                                <div id="gloss">property</div>
+                                <button id="learn_btn" type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+
+
+                            </div>
+                            <div class="col">
+                                <div name="word_image"><img src="https://img.icons8.com/color/angel"></div>
+                                <div name="diac_word">مَلَك</div>
+                                <div name="diac_word_rom">malak</div>
+                                <div name="plural">malaa2ikah مَلائكَة</div>
+                                <div name="gloss">angel</div>
+                                <button type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+                                
+                                
+                            </div>
+                            <div class="col">
+                                <div name="word_image"><img src="https://img.icons8.com/color/old-king"></div>
+                                <div name="diac_word">مَلِك</div>
+                                <div name="diac_word_rom">malik</div>
+                                <div name="plural">mulook مُلوك</div>
+                                <div name="gloss">king</div>
+                                <button type="button" class="btn btn-outline-primary mt-1">Learn 🧠</button>
+                                
+
+                                
+                            </div>
+                            <div class="col">مُلك</div>
+                        </div>
+                    </div>
+                    <div name="example_section" class="">
+                        <h3>Examples</h3>
+                        <table class="table">
+
+                            <tbody id="example_table">
+                            <tr>
+                              <td>The old king</td>
+                              <td>al-malik al-3ajooz</td>
+                              <td>الملك العجوز</td>
+                            </tr>
+                            <tr>
+                              <td>I saw the king</td>
+                              <td>ra2aytu al-malik</td>
+                              <td>رأيت الملك</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    <div name="practice_section" class="">
+                        <h3>Practice</h3>
+                        <h5>Answer the following:</h5>
+                        <table class="table">
+                            <thead>
+                                <th>Word</th>
+                                <th>Equivalent</th>
+                            </thead>
+
+                            <tbody id="practice_table">
+                            <tr>
+                              <td>The old king</td>
+                              <td>al-malik al-3ajooz</td>
+                              <td>الملك العجوز</td>
+                            </tr>
+                            <tr>
+                              <td>I saw the king</td>
+                              <td>ra2aytu al-malik</td>
+                              <td>رأيت الملك</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>        
+        
+    
+    </div>
+    
+
+</div>
+    
+    
+        
+
+
+</body>
+</html>
+
+
